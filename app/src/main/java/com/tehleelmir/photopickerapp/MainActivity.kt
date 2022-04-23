@@ -126,7 +126,6 @@ class MainActivity : AppCompatActivity() {
         if(requestCode == OPEN_CAMERA)
             if(resultCode == RESULT_OK && data != null) {
                 openCropImageView(Uri.fromFile(File(currentPhotoPath)))
-                Log.i("here22", currentPhotoPath.toString())
             }
 
         if(requestCode == OPEN_GALLERY)
